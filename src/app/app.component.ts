@@ -101,7 +101,7 @@ export class AppComponent {
 
     console.log('Отправка аудиофайла на сервер...');
 
-    this.http.post<any>('https://only-backend-wsrw.onrender.com/upload-audio', formData)
+    this.http.post<any>('https://fluentscore-backend.onrender.com/upload-audio', formData)
       .subscribe({
         next: (res) => {
           console.log('Ответ сервера:', res);
